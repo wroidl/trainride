@@ -1,0 +1,199 @@
+
+
+
+* {      /* reset of browser margins and paddings to prevent unwanted behaviour  */
+    margin:0;
+    padding:0;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.top {
+    position: fixed;
+    top: 0;
+    background-color: #201c19;
+    color: #e6dacf;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 10;
+}
+
+
+.top nav ul{
+    display:inline-flex;
+    justify-content: space-between;
+    width: 15rem;
+}
+
+.top nav li{
+    display: inline;
+    font-weight: 100;
+}
+
+.top a:visited, .top a:link{
+    text-decoration: none;
+    color: #e6dacf;
+}
+
+.top a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+
+body {
+    /* background-color: #201c19; */
+    background-color: #7f8560;
+     color: #e6dacf; 
+}
+
+.body-home{
+background-color: #201c19;
+color: #e6dacf; 
+
+}
+
+
+
+.top-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-image: url(./images/railroad-tracks-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 40rem;
+}
+.box-h1 {
+    margin-top: 0rem;
+    /* background-color: rgb(32, 28, 25); */
+    /* opacity: 0.1; */
+    width: 100%;
+    height: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-h1 h1{
+    padding: 0;
+    font-family: roboto, sans-serif;
+    font-size: 9rem;
+    text-align: center;
+}
+
+.section-teaser{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 4rem;
+    /* background-color: ivory; */
+}
+
+.teaser{
+
+ width: 20rem;
+ height: 20rem;
+ overflow: hidden;
+ margin: 2rem;
+ 
+ color: rgb(32, 28, 25);
+
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+
+ /* opacity: 0.7; */
+ 
+}
+
+.teaser .title{
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.75);
+    /* color: #597180; */
+ 
+}
+
+.teaser:hover{
+    /* opacity: 1; */
+    /* margin-top: 0.2rem; */
+    width: 21rem;
+    height: 21rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.teaser .title h2{
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+}
+.teaser .title h3{
+    font-weight: 400;
+    font-size: medium;
+    text-align: center;
+}
+
+.chuckamuck-01 {
+    background-image: url(./images/article_chuckamuck_cover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.faber-01 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c5/Faber_live-Konzert_in_Cottbus_2017.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.sophie-01 {
+    background-image: url(./images/article_sophie_spaghetti_cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gisbert-01 {
+    background-image: url(./images/article_gisbert_Sommertag.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.annenmaykantereit-01 {
+    background-image: url(./images/article_annenmaykantereit.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.element-01 {
+    background-image: url(./images/article_element_of_crime.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.headline{
+   position: relative;
+   top: 5rem;
+   text-align: center;
+}
+
+
+
