@@ -53,8 +53,8 @@ main{
    align-items: center;
    /* background-color: #e6dacf; */
    background-color: #7f8560;
-   font-family: lora, sans-serif;
-
+   /*font-family: lora, sans-serif;*/
+   font-family: 'Noto Serif', serif;
 }
     
 
