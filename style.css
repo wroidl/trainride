@@ -27,7 +27,7 @@
 
 .top nav ul{
     display:inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 15rem;
 }
 
