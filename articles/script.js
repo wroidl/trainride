@@ -89,7 +89,7 @@ addArticle("Chuckamuck",
     addArticle("Max Prosa",
     "Flügel",
     "Die Phantasie wird siegen",
-    "June 1st 2020",
+    "June 8th 2020",
     "/images/article_prosa_01.png",
     "/articles/prosa_01.html");
 
