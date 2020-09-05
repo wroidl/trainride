@@ -15,7 +15,7 @@ function addArticle(artist, title, album, date, _image, _url) {
         get backgroundImage() {
             if (this._image.startsWith("http")) {
                 return "url("+this._image + ")";
-            } else if (type === "home") {
+            } else if (type === "root") {
                 return "url(." + this._image + ")";
             } else if (type === "article") {
                 return "url(.." + this._image + ")";
@@ -25,7 +25,7 @@ function addArticle(artist, title, album, date, _image, _url) {
         get image() {
             if (this._image.startsWith("http")) {
                 return this._image;
-            } else if (type === "home") {
+            } else if (type === "root") {
                 return "." + this._image;
             } else if (type === "article") {
                 return ".." + this._image;
@@ -33,7 +33,7 @@ function addArticle(artist, title, album, date, _image, _url) {
         },
 
         get url() {
-            if (type === "home") {
+            if (type === "root") {
                 return "." + this._url;
             } else if (type === "article") {
                 return ".." + this._url
@@ -92,6 +92,13 @@ addArticle("Chuckamuck",
     "June 8th 2020",
     "/images/article_prosa_01.png",
     "/articles/prosa_01.html");
+
+    addArticle("Seiler und Speer",
+    "Ham kummst",
+    "Ham kummst",
+    "August 30th 2020",
+    "/images/article_seiler_und_speer.png",
+    "/articles/seilerspeer_01.html");
 
     /*//Test entry 
     addArticle("Artist",
@@ -164,3 +171,12 @@ teaser_link_07.href = articleList[articleList.length-7].url
 teaser_img_07.style.backgroundImage = articleList[articleList.length-7].backgroundImage;
 teaser_title_07.innerHTML = articleList[articleList.length-7].title;
 teaser_artist_07.innerHTML = articleList[articleList.length-7].artist;
+
+const teaser_link_08 = document.getElementById("teaser-link-08");
+const teaser_img_08 = document.getElementById("teaser-img-08");
+const teaser_title_08 = document.getElementById("teaser-title-08");
+const teaser_artist_08 = document.getElementById("teaser-artist-08");
+teaser_link_08.href = articleList[articleList.length-8].url
+teaser_img_08.style.backgroundImage = articleList[articleList.length-8].backgroundImage;
+teaser_title_08.innerHTML = articleList[articleList.length-8].title;
+teaser_artist_08.innerHTML = articleList[articleList.length-8].artist;

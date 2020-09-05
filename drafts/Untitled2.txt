@@ -1,0 +1,17 @@
+b.m.zinow@enbw.com,
+f.hohlweck@enbw.com, 
+a.wiegner@enbw.com, 
+s.strmosljanin@enbw.com, 
+al.roth@enbw.com, k.hauck@enbw.com, 
+de.binder@enbw.com, 
+i.schmitz-kleinhenz@enbw.com, 
+s.haghdoust@enbw.com, 
+b.muehlbauer@enbw.com,
+s.bleischwitz@enbw.com,
+k.materna@enbw.com,
+mechnich@bryter.io,
+schroettke@bryter.io,
+roidl@bryter.io,
+
+BRYTER <> EnBW Workshop Tech Check
+ 

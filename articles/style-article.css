@@ -12,9 +12,14 @@
     display: none;
 }
 
+
+
 .top {
     position: fixed;
     top: 0;
+}
+
+.top, .bottom{
     background-color: #201c19;
     color: #e6dacf;
     width: 100%;
@@ -27,23 +32,23 @@
 }
 
 
-.top nav ul{
+nav ul{
     display:inline-flex;
     justify-content: space-around;
     width: 15rem;
 }
 
-.top nav li{
+nav li{
     display: inline;
     font-weight: 100;
 }
 
-.top a:visited, .top a:link{
+.top a:visited, .top a:link, .bottom a:visited,.bottom a:link{
     text-decoration: none;
     color: #e6dacf;
 }
 
-.top a:hover{
+.top a:hover, .bottom a:hover{
     color: white;
     font-weight: bold;
     
@@ -126,7 +131,7 @@ position: relative;
 	padding-top:30px;
 	height:0;
     overflow:hidden;
-    margin:2rem 0;
+    margin:2rem 2rem 0.5rem 0rem;
     min-width: 28rem;
     width: 80%;
 }
@@ -137,6 +142,10 @@ position: relative;
 	left:0;
 	width:100%;
 	height:100%;
+}
+
+.video-external-link{
+
 }
 
 .spotify{
@@ -185,7 +194,7 @@ padding: 0.5rem;
     font-style: normal;
     font-size: xx-small;
 }
-.dt, .eng{
+.dt, .eng, .eng-2{
 /* Deutscher und Englischer Text werden in einer Reihe angezeigt */
     display: inline-block;
     
@@ -204,6 +213,13 @@ padding: 0.5rem;
 }
 
 .eng{
+    margin-left: 1.5rem;
+    /* Einzug für einstellige Nummern */
+    text-indent: -0.8rem;
+    font-style: italic;
+}
+
+.eng-2{
     margin-left: 1.5rem;
     /* Einzug für einstellige Nummern */
     text-indent: -0.8rem;
@@ -323,17 +339,21 @@ text-align: center;
 .eng.chorus{
     display: none;
 }
-    .dt, .eng { 
+    .dt, .eng, .eng-2 { 
         display: block; 
         width: 25rem; 
         
     }
 
-    .eng{
-       
+    .eng{  
         font-size: small;
         margin-left: 0.3rem;
+    }
 
+    .eng-2{
+        font-size: small;
+        margin-left: 0.3rem;
+        margin-bottom: 0.3rem;
     }
 }
 @media only screen and (max-width: 1200px) {
