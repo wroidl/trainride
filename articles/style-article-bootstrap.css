@@ -1,0 +1,90 @@
+.my-c-light {
+  color: #e6dacf;
+}
+.my-bc-brown {
+  background-color: #201c19;
+}
+.my-bc-light {
+  background-color: #e6dacf;
+}
+.my-bc-green{
+  background-color: #7f8560;
+}
+.my-mt-6{
+  margin-top: 6rem;
+}
+
+.my-top-margin{
+margin-top: 4.5rem;
+}
+
+.no-italics{
+  font-style: normal;
+}
+
+.dt{
+  margin-bottom: 0;
+}
+.eng{
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+
+.verse{
+  margin-bottom: 2rem;
+}
+
+.chorus{
+  font-weight: bold;
+}
+a{
+  color: #7f8560;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* --------------- Nav Bar ----------------------- */
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28230, 218, 207, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(230, 218, 207);
+  
+}
+
+/* --------------- Card/Teaser Components ----------------------- */
+.card{
+  padding: 0rem;
+  margin: 0rem;
+  border-style: none;
+  background-color: rgb(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.card a {
+  color: #201c19;
+  text-decoration: none;
+}
+
+.card-body{
+  height: auto;
+  padding: 0.3rem;
+}
+.card-body p{
+  margin-bottom: 0;
+}
+
+.my-button-more{
+  border-radius: 0.25rem;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+/* --------------- More Button ----------------------- */
+.my-button:hover{
+  background-color: #382e27;
+  
+}
