@@ -7,41 +7,41 @@
 .my-bc-light {
   background-color: #e6dacf;
 }
-.my-bc-green{
+.my-bc-green {
   background-color: #7f8560;
 }
-.my-mt-6{
+.my-mt-6 {
   margin-top: 6rem;
 }
 
-.my-top-margin{
-margin-top: 4.5rem;
+.my-top-margin {
+  margin-top: 4.5rem;
 }
 
-.no-italics{
+.no-italics {
   font-style: normal;
 }
 
-.dt{
+.dt {
   margin-bottom: 0;
 }
 
-.dt-2{
+.dt-2 {
   font-size: small;
 }
-.eng{
+.eng {
   font-size: small;
   margin-bottom: 0.5rem;
 }
 
-.verse{
+.verse {
   margin-bottom: 2rem;
 }
 
-.chorus{
+.chorus {
   font-weight: bold;
 }
-a{
+a {
   color: #7f8560;
 }
 
@@ -57,11 +57,10 @@ a:hover {
 }
 .custom-toggler.navbar-toggler {
   border-color: rgb(230, 218, 207);
-  
 }
 
 /* --------------- Card/Teaser Components ----------------------- */
-.card{
+.card {
   padding: 0rem;
   margin: 0rem;
   border-style: none;
@@ -74,29 +73,59 @@ a:hover {
   text-decoration: none;
 }
 
-.card-body{
+.card-body {
   height: auto;
   padding: 0.3rem;
 }
-.card-body p{
+.card-body p {
   margin-bottom: 0;
 }
 
-.my-button-more{
+.my-button-more {
   border-radius: 0.25rem;
   background-color: rgb(255, 255, 255, 0.3);
 }
 
 /* --------------- More Button ----------------------- */
-.my-button:hover{
+.my-button:hover {
   background-color: #382e27;
 }
 
 /* --------------- Spotify ----------------------- */
 
-.spotify{
+.spotify {
   padding: 0.4rem;
   float: right;
-  width:270px;
+  width: 270px;
   height: 93px;
+}
+
+.top-img {
+  background-image: url(../images/railroad-tracks-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.top-img-small {
+  height: 20rem;
+}
+
+.top-img-large {
+  height: 30rem;
+}
+
+.top-img-small h1 {
+  padding: 0;
+  font-family: roboto, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.top-img-large h1 {
+  padding: 0;
+  font-family: roboto, sans-serif;
+  font-size: 9rem;
+  text-align: center;
 }
