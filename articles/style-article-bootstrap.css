@@ -86,5 +86,10 @@ a:hover {
 /* --------------- More Button ----------------------- */
 .my-button:hover{
   background-color: #382e27;
-  
+}
+
+/* --------------- Height Auto ----------------------- */
+
+.spotify{
+  height: auto;
 }
