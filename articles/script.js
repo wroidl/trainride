@@ -140,12 +140,33 @@ if (type === "article") {
       currentArticle = item;
     }
   });
-  //set header image
-  let header_img = document.getElementById("header-img");
-  if (header_img) {
-    header_img.src = articleList[currentArticleIndex].image;
-    header_img.alt = articleList[currentArticleIndex].alt;
+  //set header images
+  let header_img_top = document.getElementById("header-img-top");
+  if (header_img_top) {
+    header_img_top.src = articleList[currentArticleIndex].image;
+    header_img_top.alt = articleList[currentArticleIndex].alt;
   }
+  let header_img_inline = document.getElementById("header-img-inline");
+  if (header_img_inline) {
+    header_img_inline.src = articleList[currentArticleIndex].image;
+    header_img_inline.alt = articleList[currentArticleIndex].alt;
+  }
+
+  //set header info
+  let article_title = document.getElementById("article-title");
+  if (article_title) {
+    article_title.innerHTML = articleList[currentArticleIndex].title;
+  }
+  let article_artist = document.getElementById("article-artist");
+  if (article_artist) {
+    article_artist.innerHTML = "by " + articleList[currentArticleIndex].artist;
+  }
+  let article_published = document.getElementById("article-published");
+  if (article_published) {
+    article_published.innerHTML =
+      "published " + articleList[currentArticleIndex].date;
+  }
+
   //remove current article from teaserList
   teaserList.splice(currentArticleIndex, 1);
 }
