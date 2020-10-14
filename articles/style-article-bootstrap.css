@@ -25,6 +25,10 @@ margin-top: 4.5rem;
 .dt{
   margin-bottom: 0;
 }
+
+.dt-2{
+  font-size: small;
+}
 .eng{
   font-size: small;
   margin-bottom: 0.5rem;
@@ -88,8 +92,11 @@ a:hover {
   background-color: #382e27;
 }
 
-/* --------------- Height Auto ----------------------- */
+/* --------------- Spotify ----------------------- */
 
 .spotify{
-  height: auto;
+  padding: 0.4rem;
+  float: right;
+  width:270px;
+  height: 93px;
 }

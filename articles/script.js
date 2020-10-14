@@ -85,7 +85,7 @@ addArticle(
   "Alles Gute",
   "Sei ein Faber im Wind",
   "March 30th 2020",
-  "https://upload.wikimedia.org/wikipedia/commons/c/c5/Faber_live-Konzert_in_Cottbus_2017.jpg",
+  "/images/article_faber_alles_gute.jpg",
   "/articles/faber_01.html"
 );
 
