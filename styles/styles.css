@@ -69,9 +69,16 @@ a:hover {
   padding: 0rem;
   margin: 0rem;
   border-style: none;
-  background-color: rgb(255, 255, 255, 0.3);
   text-decoration: none;
 }
+
+.card-bc-article{
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.card-bc-home{
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
 
 .card a {
   color: #201c19;
@@ -114,6 +121,8 @@ a:hover {
   background-size: cover;
   width: 100%;
 }
+
+/* --------------- To image on index.html ----------------------- */
 
 .top-img-small {
   height: 20rem;
