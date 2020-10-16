@@ -7,6 +7,11 @@
 .my-bc-light {
   background-color: #e6dacf;
 }
+
+.my-c-ivory{
+  background-color: ivory;
+}
+
 .my-bc-green {
   background-color: #7f8560;
 }
@@ -99,6 +104,8 @@ a:hover {
   width: 270px;
   height: 93px;
 }
+
+/* --------------- Spotify ----------------------- */
 
 .top-img {
   background-image: url(../images/railroad-tracks-header.jpg);
