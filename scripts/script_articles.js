@@ -116,6 +116,15 @@ addArticle(
   "/articles/seilerspeer_01.html"
 );
 
+addArticle(
+  "Gisbert zu Knyphausen",
+  "Kräne",
+  "Hurra! Hurra! So nicht.",
+  "November 15th 2020",
+  "/images/article_gisbert_kraene.jpg",
+  "/articles/knyphausen-kraene.html"
+);
+
 /*  //Test entry 
  addArticle("Artist",
  "Title",

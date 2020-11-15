@@ -114,6 +114,15 @@ addArticle(
   "/articles/seilerspeer_01.html"
 );
 
+addArticle(
+  "Gisbert zu Knyphausen",
+  "Kräne",
+  "Hurra! Hurra! So nicht.",
+  "November 15th 2020",
+  "/images/article_gisbert_kraene.jpg",
+  "/articles/knyphausen-kraene.html"
+);
+
 /*//Test entry 
     addArticle("Artist",
     "Title",
@@ -193,3 +202,12 @@ teaser_link_08.href = articleList[articleList.length - 8].url;
 teaser_img_08.src = articleList[articleList.length - 8].image;
 teaser_title_08.innerHTML = articleList[articleList.length - 8].title;
 teaser_artist_08.innerHTML = articleList[articleList.length - 8].artist;
+
+const teaser_link_09 = document.getElementById("teaser-link-09");
+const teaser_img_09 = document.getElementById("teaser-img-09");
+const teaser_title_09 = document.getElementById("teaser-title-09");
+const teaser_artist_09 = document.getElementById("teaser-artist-09");
+teaser_link_09.href = articleList[articleList.length - 9].url;
+teaser_img_09.src = articleList[articleList.length - 9].image;
+teaser_title_09.innerHTML = articleList[articleList.length - 9].title;
+teaser_artist_09.innerHTML = articleList[articleList.length - 9].artist;
