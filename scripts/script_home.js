@@ -123,91 +123,24 @@ addArticle(
   "/articles/knyphausen-kraene.html"
 );
 
-/*//Test entry 
-    addArticle("Artist",
-    "Title",
-    "Album",
-    "April 8th 2020",
-    "/images/about.jpg",
-    "/index.html"); */
 
-const teaser_link_01 = document.getElementById("teaser-link-01");
-const teaser_img_01 = document.getElementById("teaser-img-01");
-const teaser_title_01 = document.getElementById("teaser-title-01");
-const teaser_artist_01 = document.getElementById("teaser-artist-01");
-teaser_link_01.href = articleList[articleList.length - 1].url;
-teaser_img_01.src = articleList[articleList.length - 1].image;
-teaser_title_01.innerHTML = articleList[articleList.length - 1].title;
-teaser_artist_01.innerHTML = articleList[articleList.length - 1].artist;
 
-const teaser_link_02 = document.getElementById("teaser-link-02");
-const teaser_img_02 = document.getElementById("teaser-img-02");
-const teaser_title_02 = document.getElementById("teaser-title-02");
-const teaser_artist_02 = document.getElementById("teaser-artist-02");
-teaser_link_02.href = articleList[articleList.length - 2].url;
-teaser_img_02.src = articleList[articleList.length - 2].image;
-teaser_title_02.innerHTML = articleList[articleList.length - 2].title;
-teaser_artist_02.innerHTML = articleList[articleList.length - 2].artist;
 
-const teaser_link_03 = document.getElementById("teaser-link-03");
-const teaser_img_03 = document.getElementById("teaser-img-03");
-const teaser_title_03 = document.getElementById("teaser-title-03");
-const teaser_artist_03 = document.getElementById("teaser-artist-03");
-teaser_link_03.href = articleList[articleList.length - 3].url;
-teaser_img_03.src = articleList[articleList.length - 3].image;
-teaser_title_03.innerHTML = articleList[articleList.length - 3].title;
-teaser_artist_03.innerHTML = articleList[articleList.length - 3].artist;
 
-const teaser_link_04 = document.getElementById("teaser-link-04");
-const teaser_img_04 = document.getElementById("teaser-img-04");
-const teaser_title_04 = document.getElementById("teaser-title-04");
-const teaser_artist_04 = document.getElementById("teaser-artist-04");
-teaser_link_04.href = articleList[articleList.length - 4].url;
-teaser_img_04.src = articleList[articleList.length - 4].image;
-teaser_title_04.innerHTML = articleList[articleList.length - 4].title;
-teaser_artist_04.innerHTML = articleList[articleList.length - 4].artist;
+ const cardListElement = document.getElementById("card-list");
+const reversedArticleList = articleList.reverse();
 
-const teaser_link_05 = document.getElementById("teaser-link-05");
-const teaser_img_05 = document.getElementById("teaser-img-05");
-const teaser_title_05 = document.getElementById("teaser-title-05");
-const teaser_artist_05 = document.getElementById("teaser-artist-05");
-teaser_link_05.href = articleList[articleList.length - 5].url;
-teaser_img_05.src = articleList[articleList.length - 5].image;
-teaser_title_05.innerHTML = articleList[articleList.length - 5].title;
-teaser_artist_05.innerHTML = articleList[articleList.length - 5].artist;
 
-const teaser_link_06 = document.getElementById("teaser-link-06");
-const teaser_img_06 = document.getElementById("teaser-img-06");
-const teaser_title_06 = document.getElementById("teaser-title-06");
-const teaser_artist_06 = document.getElementById("teaser-artist-06");
-teaser_link_06.href = articleList[articleList.length - 6].url;
-teaser_img_06.src = articleList[articleList.length - 6].image;
-teaser_title_06.innerHTML = articleList[articleList.length - 6].title;
-teaser_artist_06.innerHTML = articleList[articleList.length - 6].artist;
-
-const teaser_link_07 = document.getElementById("teaser-link-07");
-const teaser_img_07 = document.getElementById("teaser-img-07");
-const teaser_title_07 = document.getElementById("teaser-title-07");
-const teaser_artist_07 = document.getElementById("teaser-artist-07");
-teaser_link_07.href = articleList[articleList.length - 7].url;
-teaser_img_07.src = articleList[articleList.length - 7].image;
-teaser_title_07.innerHTML = articleList[articleList.length - 7].title;
-teaser_artist_07.innerHTML = articleList[articleList.length - 7].artist;
-
-const teaser_link_08 = document.getElementById("teaser-link-08");
-const teaser_img_08 = document.getElementById("teaser-img-08");
-const teaser_title_08 = document.getElementById("teaser-title-08");
-const teaser_artist_08 = document.getElementById("teaser-artist-08");
-teaser_link_08.href = articleList[articleList.length - 8].url;
-teaser_img_08.src = articleList[articleList.length - 8].image;
-teaser_title_08.innerHTML = articleList[articleList.length - 8].title;
-teaser_artist_08.innerHTML = articleList[articleList.length - 8].artist;
-
-const teaser_link_09 = document.getElementById("teaser-link-09");
-const teaser_img_09 = document.getElementById("teaser-img-09");
-const teaser_title_09 = document.getElementById("teaser-title-09");
-const teaser_artist_09 = document.getElementById("teaser-artist-09");
-teaser_link_09.href = articleList[articleList.length - 9].url;
-teaser_img_09.src = articleList[articleList.length - 9].image;
-teaser_title_09.innerHTML = articleList[articleList.length - 9].title;
-teaser_artist_09.innerHTML = articleList[articleList.length - 9].artist;
+for (song of reversedArticleList){
+  const newElement = document.createElement('div');
+  newElement.className = 'card card-bc-home m-5 col-sm-4 col-xl-3 m-sm-3';
+  newElement.innerHTML = `<a class="link-unstyled" href="${song.url}">
+  <img class="card-img-top" src="${song.image}"
+    alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text font-weight-bold text-center">${song.title}</p>
+    <p class="card-text text-center">${song.artist}</p>
+  </div>
+</a>`;
+cardListElement.appendChild(newElement);
+}
