@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="./search.js" defer></script>
 </head>
 
 <body>
     <div>
-        <div class="search-bar">
-            <input id="input-search" type="text"></input>
-            <button id="btn-search">find</button>
+        
+
+
+        <label for="sort">sort articles:</label>
+
+        <select name="sort" id="sort">
+            <option value="dateRecent">by date (recent)</option>
+            <option value="dateOldest">by date (oldest)</option>
+            <option value="titleAZ">by title (A-Z)</option>
+            <option value="titleZA">by title (Z-A)</option>
+            <option value="artistAZ">by artist (A-Z)</option>
+            <option value="artistZA">by artist (Z-A)</option>
+        </select>
+
+
+        <div class="search-container">
+            <table class="search-box">
+                <tr>
+                    <td>
+                        <input id="search-input" type="text" placeholder="search" class="search-input">
+                    </td>
+                    <td>
+                        <a href="#">
+                            <i id="search-icon" class="material-icons">search</i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
         </div>
 
         <div id="teaser-list" class="teaser-box">

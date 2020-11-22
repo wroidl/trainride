@@ -1,24 +1,41 @@
-const articleList = [];
+const articleListAll = [];
+let articleListDisplayed = [];
 
-function addArticle(artist, title, album, date, image, url, related) {
+function addArticle(artist, title, album, _date, image, url, related) {
   const article = {
     artist,
     title,
     album,
-    date,
+    _date,
     image: ".." + image,
     url,
     alt: "album cover - " + album + " - by " + artist,
     related,
+
+    get date() {
+      let nth = "th";
+      day = _date.getDate();
+      if (day === 1 || day === 21 || day === 31) {
+        nth = "st";
+      } else if (day === 2 || day === 22) {
+        nth = "nd";
+      } else if (day === 3 || day === 23) {
+        nth = "rd";
+      }
+      return `${day}${nth} ${_date.toLocaleString("en", {
+        month: "long",
+      })} ${_date.getFullYear()}`;
+    },
   };
-  articleList.push(article);
+  articleListAll.push(article);
 }
+
 function addData() {
   addArticle(
     "Element of Crime",
     "Am Ende denk' ich immer nur an Dich",
     "Immer da wo Du bist, bin ich nie",
-    "March 25th 2020",
+    new Date(2020, 2, 23),
     "/images/article_element_of_crime.png",
     "/articles/element_of_crime_01.html",
     ["AnnenMayKantereit", "Gisbert zu Knyphausen"]
@@ -28,7 +45,7 @@ function addData() {
     "AnnenMayKantereit",
     "Wohin Du gehst",
     "Alles nix Konkretes",
-    "March 25th 2020",
+    new Date(2020, 2, 24),
     "/images/article_annenmaykantereit.png",
     "/articles/annenmaykantereit_01.html"
   );
@@ -37,7 +54,7 @@ function addData() {
     "Gisbert zu Knyphausen",
     "Sommertag",
     "Gisbert zu Knyphausen",
-    "March 25th 2020",
+    new Date(2020, 2, 25),
     "/images/article_gisbert_Sommertag.jpg",
     "/articles/knyphausen_01.html"
   );
@@ -46,7 +63,7 @@ function addData() {
     "Sophie Hunger",
     "Spaghetti mit Spinat",
     "Supermoon",
-    "March 26th 2020",
+    new Date(2020, 2, 26),
     "/images/article_sophie_spaghetti_cover.jpg",
     "/articles/sophie_hunger_01.html"
   );
@@ -55,7 +72,7 @@ function addData() {
     "Faber",
     "Alles Gute",
     "Sei ein Faber im Wind",
-    "March 30th 2020",
+    new Date(2020, 2, 30),
     "/images/article_faber_alles_gute.jpg",
     "/articles/faber_01.html"
   );
@@ -64,7 +81,7 @@ function addData() {
     "Chuckamuck",
     "20.000 Meilen",
     "Chuckamuck",
-    "April 8th 2020",
+    new Date(2020, 3, 8),
     "/images/article_chuckamuck_cover.png",
     "/articles/chuckamuck_01.html"
   );
@@ -73,7 +90,7 @@ function addData() {
     "Max Prosa",
     "Flügel",
     "Die Phantasie wird siegen",
-    "June 8th 2020",
+    new Date(2020, 5, 8),
     "/images/article_prosa_01.png",
     "/articles/prosa_01.html"
   );
@@ -82,7 +99,7 @@ function addData() {
     "Seiler und Speer",
     "Ham kummst",
     "Ham kummst",
-    "August 30th 2020",
+    new Date(2020, 7, 30),
     "/images/article_seiler_und_speer.png",
     "/articles/seilerspeer_01.html"
   );
@@ -91,29 +108,28 @@ function addData() {
     "Gisbert zu Knyphausen",
     "Kräne",
     "Hurra! Hurra! So nicht.",
-    "November 15th 2020",
+    new Date(2020, 10, 15),
     "/images/article_gisbert_kraene.jpg",
     "/articles/knyphausen-kraene.html"
   );
 }
-addData();
 
-const teaserList = document.getElementById("teaser-list");
-const inputElement = document.getElementById("input-search");
-const buttonElement = document.getElementById("btn-search");
-buttonElement.addEventListener("click", handleSearch);
+function handleSearchKey(event) {
+  if (event.key === "Enter") handleSearch();
+}
 
 function handleSearch() {
   const searchString = inputElement.value.toLowerCase();
-  const resultArray = articleList.filter(
+  articleListDisplayed = articleListAll.filter(
     (article) =>
       article.artist.toLowerCase().includes(searchString) ||
       article.title.toLowerCase().includes(searchString)
   );
-  renderTeaserItems(resultArray);
+  renderTeaserItems(articleListDisplayed, true);
+  handleSort(null, sortElement.value);
 }
 
-function renderTeaserItems(searchResult) {
+function renderTeaserItems(searchResult, search) {
   teaserList.innerHTML = "";
 
   for (song of searchResult) {
@@ -122,10 +138,65 @@ function renderTeaserItems(searchResult) {
     newElement.innerHTML = `<img src="${song.image}" alt="" class="teaser-img">
   <div class="teaser-content">
       <h2>${song.title} by ${song.artist}</h2>
+      <p>published ${song.date}</p>
       <p>This is a Teaser-Text for the article, that will be displayed...</p>
   </div>`;
     teaserList.appendChild(newElement);
   }
+  if (search) {
+    const newElement = document.createElement("div");
+    newElement.className = "search-summary";
+    newElement.innerHTML = `<p>${searchResult.length} matches found</p>`;
+    teaserList.prepend(newElement);
+  }
 }
 
-renderTeaserItems(articleList);
+function handleSort(event, sortMode) {
+  if (event) sortMode = event.target.value;
+  //console.log(`handleSort with ${sortMode}`)
+  if (sortMode === "dateRecent") {
+    articleListDisplayed.sort((a, b) => b._date - a._date);
+  } else if (sortMode === "dateOldest") {
+    articleListDisplayed.sort((a, b) => a._date - b._date);
+  } else if (sortMode === "titleAZ") {
+    articleListDisplayed.sort((a, b) => {
+      if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
+      if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
+      return 0;
+    });
+  } else if (sortMode === "titleZA") {
+    articleListDisplayed.sort((a, b) => {
+      if (a.title.toLowerCase() > b.title.toLowerCase()) return -1;
+      if (a.title.toLowerCase() < b.title.toLowerCase()) return 1;
+      return 0;
+    });
+  } else if (sortMode === "artistAZ") {
+    articleListDisplayed.sort((a, b) => {
+      if (a.artist.toLowerCase() < b.artist.toLowerCase()) return -1;
+      if (a.artist.toLowerCase() > b.artist.toLowerCase()) return 1;
+      return 0;
+    });
+  } else if (sortMode === "artistZA") {
+    articleListDisplayed.sort((a, b) => {
+      if (a.artist.toLowerCase() > b.artist.toLowerCase()) return -1;
+      if (a.artist.toLowerCase() < b.artist.toLowerCase()) return 1;
+      return 0;
+    });
+  }
+
+  renderTeaserItems(articleListDisplayed);
+}
+
+const teaserList = document.getElementById("teaser-list");
+const inputElement = document.getElementById("search-input");
+const buttonElement = document.getElementById("search-icon");
+buttonElement.addEventListener("click", handleSearch);
+inputElement.addEventListener("keyup", handleSearchKey);
+
+const sortElement = document.getElementById("sort");
+sortElement.addEventListener("change", handleSort);
+
+addData();
+articleListDisplayed = articleListAll;
+handleSort(null, "dateRecent");
+renderTeaserItems(articleListDisplayed);
