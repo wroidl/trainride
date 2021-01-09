@@ -36,7 +36,7 @@ function addData() {
     "Am Ende denk' ich immer nur an Dich",
     "Immer da wo Du bist, bin ich nie",
     new Date(2020, 2, 23),
-    "/images/article_element_of_crime.png",
+    "/images/article_element_of_crime.jpg",
     "/articles/element-of-crime-am-ende-denk-ich-immer-nur-an-dich.html",
     ["AnnenMayKantereit", "Gisbert zu Knyphausen"]
   );
@@ -46,7 +46,7 @@ function addData() {
     "Wohin Du gehst",
     "Alles nix Konkretes",
     new Date(2020, 2, 24),
-    "/images/article_annenmaykantereit.png",
+    "/images/article_annenmaykantereit.jpg",
     "/articles/annenmaykantereit-wohin-du-gehst.html"
   );
 
@@ -82,7 +82,7 @@ function addData() {
     "20.000 Meilen",
     "Chuckamuck",
     new Date(2020, 3, 8),
-    "/images/article_chuckamuck_cover.png",
+    "/images/article_chuckamuck_cover.jpg",
     "/articles/chuckamuck-20000-meilen.html"
   );
 
@@ -91,7 +91,7 @@ function addData() {
     "Flügel",
     "Die Phantasie wird siegen",
     new Date(2020, 5, 8),
-    "/images/article_max-prosa-fluegel.png",
+    "/images/article_prosa_01.jpg",
     "/articles/max-prosa-fluegel.html"
   );
 

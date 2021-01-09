@@ -115,7 +115,7 @@ addArticle(
   "Flügel",
   "Die Phantasie wird siegen",
   new Date(2020, 5, 8),
-  "/images/article_max-prosa-fluegel.jpg",
+  "/images/article_prosa_01.jpg",
   "/articles/max-prosa-fluegel.html"
 );
 
