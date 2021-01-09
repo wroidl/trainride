@@ -143,11 +143,10 @@ function renderTeaserItems(searchResult, search) {
   </div>`;
     teaserList.appendChild(newElement);
   }
-  if (search) {
-    const newElement = document.createElement("div");
-    newElement.className = "search-summary";
-    newElement.innerHTML = `<p>${searchResult.length} matches found</p>`;
-    teaserList.prepend(newElement);
+  if (searchResult.length === articleListAll.length) {
+    summaryElement.textContent = "all articles displayed";
+  } else {
+    summaryElement.textContent = `${searchResult.length} of ${articleListAll.length} displayed`;
   }
 }
 
@@ -195,6 +194,8 @@ inputElement.addEventListener("keyup", handleSearchKey);
 
 const sortElement = document.getElementById("sort");
 sortElement.addEventListener("change", handleSort);
+
+const summaryElement = document.getElementById("summary");
 
 addData();
 articleListDisplayed = articleListAll;

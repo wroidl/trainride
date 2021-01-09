@@ -47,7 +47,7 @@ addArticle(
   "Am Ende denk' ich immer nur an Dich",
   "Immer da wo Du bist, bin ich nie",
   "March 25th 2020",
-  "/images/article_element_of_crime.png",
+  "/images/article_element_of_crime.jpg",
   "/articles/element_of_crime_01.html"
 );
 
@@ -56,7 +56,7 @@ addArticle(
   "Wohin Du gehst",
   "Alles nix Konkretes",
   "March 25th 2020",
-  "/images/article_annenmaykantereit.png",
+  "/images/article_annenmaykantereit.jpg",
   "/articles/annenmaykantereit_01.html"
 );
 
@@ -92,7 +92,7 @@ addArticle(
   "20.000 Meilen",
   "Chuckamuck",
   "April 8th 2020",
-  "/images/article_chuckamuck_cover.png",
+  "/images/article_chuckamuck_cover.jpg",
   "/articles/chuckamuck_01.html"
 );
 
@@ -101,7 +101,7 @@ addArticle(
   "Flügel",
   "Die Phantasie wird siegen",
   "June 8th 2020",
-  "/images/article_prosa_01.png",
+  "/images/article_prosa_01.jpg",
   "/articles/prosa_01.html"
 );
 
@@ -122,6 +122,15 @@ addArticle(
   "/images/article_gisbert_kraene.jpg",
   "/articles/knyphausen-kraene.html"
 );
+
+addArticle(
+  "Isolation Berlin",
+  "Alles grau",
+  "Berliner Schule/Protopop",
+  "January 9th 2021",
+  "/images/article_isolation_berlin_alles_grau.jpg",
+  "/articles/isolation-berlin-alles-grau.html"
+);    
 
 
 
