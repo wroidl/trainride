@@ -62,7 +62,7 @@ addArticle(
   "Immer da wo Du bist, bin ich nie",
   new Date(2020, 2, 23),
   "/images/article_element_of_crime.jpg",
-  "/articles/element_of_crime_01.html"
+  "/articles/element-of-crime-am-ende-denk-ich-immer-nur-an-dich.html"
 );
 
 addArticle(
@@ -71,9 +71,8 @@ addArticle(
   "Alles nix Konkretes",
   new Date(2020, 2, 24),
   "/images/article_annenmaykantereit.jpg",
-  "/articles/annenmaykantereit_01.html"
+  "/articles/annenmaykantereit-wohin-du-gehst.html"
 );
-
 
 addArticle(
   "Gisbert zu Knyphausen",
@@ -81,7 +80,7 @@ addArticle(
   "Gisbert zu Knyphausen",
   new Date(2020, 2, 25),
   "/images/article_gisbert_Sommertag.jpg",
-  "/articles/knyphausen_01.html"
+  "/articles/gisbert-zu-knyphausen-sommertag.html"
 );
 
 addArticle(
@@ -90,7 +89,7 @@ addArticle(
   "Supermoon",
   new Date(2020, 2, 26),
   "/images/article_sophie_spaghetti_cover.jpg",
-  "/articles/sophie_hunger_01.html"
+  "/articles/sophie-hunger-spaghetti-mit-spinat.html"
 );
 
 addArticle(
@@ -99,7 +98,7 @@ addArticle(
   "Sei ein Faber im Wind",
   new Date(2020, 2, 30),
   "/images/article_faber_alles_gute.jpg",
-  "/articles/faber_01.html"
+  "/articles/faber-alles-gute.html"
 );
 
 addArticle(
@@ -108,7 +107,7 @@ addArticle(
   "Chuckamuck",
   new Date(2020, 3, 8),
   "/images/article_chuckamuck_cover.jpg",
-  "/articles/chuckamuck_01.html"
+  "/articles/chuckamuck-20000-meilen.html"
 );
 
 addArticle(
@@ -116,8 +115,8 @@ addArticle(
   "Flügel",
   "Die Phantasie wird siegen",
   new Date(2020, 5, 8),
-  "/images/article_prosa_01.jpg",
-  "/articles/prosa_01.html"
+  "/images/article_max-prosa-fluegel.jpg",
+  "/articles/max-prosa-fluegel.html"
 );
 
 addArticle(
@@ -126,7 +125,7 @@ addArticle(
   "Ham kummst",
   new Date(2020, 7, 30),
   "/images/article_seiler_und_speer.png",
-  "/articles/seilerspeer_01.html"
+  "/articles/seiler-und-speer-ham-kummst.html"
 );
 
 addArticle(
@@ -135,7 +134,7 @@ addArticle(
   "Hurra! Hurra! So nicht.",
   new Date(2020, 10, 15),
   "/images/article_gisbert_kraene.jpg",
-  "/articles/knyphausen-kraene.html"
+  "/articles/gisbert-zu-knyphausen-kraene.html"
 );
 
 addArticle(
@@ -145,7 +144,7 @@ addArticle(
   new Date(2021, 0, 9),
   "/images/article_isolation_berlin_alles_grau.jpg",
   "/articles/isolation-berlin-alles-grau.html"
-);  
+);
 
 /*  //Test entry 
  addArticle("Artist",

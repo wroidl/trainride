@@ -37,7 +37,7 @@ function addData() {
     "Immer da wo Du bist, bin ich nie",
     new Date(2020, 2, 23),
     "/images/article_element_of_crime.png",
-    "/articles/element_of_crime_01.html",
+    "/articles/element-of-crime-am-ende-denk-ich-immer-nur-an-dich.html",
     ["AnnenMayKantereit", "Gisbert zu Knyphausen"]
   );
 
@@ -47,7 +47,7 @@ function addData() {
     "Alles nix Konkretes",
     new Date(2020, 2, 24),
     "/images/article_annenmaykantereit.png",
-    "/articles/annenmaykantereit_01.html"
+    "/articles/annenmaykantereit-wohin-du-gehst.html"
   );
 
   addArticle(
@@ -56,7 +56,7 @@ function addData() {
     "Gisbert zu Knyphausen",
     new Date(2020, 2, 25),
     "/images/article_gisbert_Sommertag.jpg",
-    "/articles/knyphausen_01.html"
+    "/articles/gisbert-zu-knyphausen-sommertag.html"
   );
 
   addArticle(
@@ -65,7 +65,7 @@ function addData() {
     "Supermoon",
     new Date(2020, 2, 26),
     "/images/article_sophie_spaghetti_cover.jpg",
-    "/articles/sophie_hunger_01.html"
+    "/articles/sophie-hunger-spaghetti-mit-spinat.html"
   );
 
   addArticle(
@@ -74,7 +74,7 @@ function addData() {
     "Sei ein Faber im Wind",
     new Date(2020, 2, 30),
     "/images/article_faber_alles_gute.jpg",
-    "/articles/faber_01.html"
+    "/articles/faber-alles-gute.html"
   );
 
   addArticle(
@@ -83,7 +83,7 @@ function addData() {
     "Chuckamuck",
     new Date(2020, 3, 8),
     "/images/article_chuckamuck_cover.png",
-    "/articles/chuckamuck_01.html"
+    "/articles/chuckamuck-20000-meilen.html"
   );
 
   addArticle(
@@ -91,8 +91,8 @@ function addData() {
     "Flügel",
     "Die Phantasie wird siegen",
     new Date(2020, 5, 8),
-    "/images/article_prosa_01.png",
-    "/articles/prosa_01.html"
+    "/images/article_max-prosa-fluegel.png",
+    "/articles/max-prosa-fluegel.html"
   );
 
   addArticle(
@@ -101,7 +101,7 @@ function addData() {
     "Ham kummst",
     new Date(2020, 7, 30),
     "/images/article_seiler_und_speer.png",
-    "/articles/seilerspeer_01.html"
+    "/articles/seiler-und-speer-ham-kummst.html"
   );
 
   addArticle(
@@ -110,7 +110,7 @@ function addData() {
     "Hurra! Hurra! So nicht.",
     new Date(2020, 10, 15),
     "/images/article_gisbert_kraene.jpg",
-    "/articles/knyphausen-kraene.html"
+    "/articles/gisbert-zu-knyphausen-kraene.html"
   );
 }
 
