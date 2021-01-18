@@ -146,6 +146,15 @@ addArticle(
   "/articles/isolation-berlin-alles-grau.html"
 );
 
+addArticle(
+  "Alin Coen",
+  "Kein Weg Zurück",
+  "We’re Not the Ones We Thought We Were",
+  new Date(2021, 0, 18),
+  "/images/article_alin_coen_kein_weg_zurueck.png",
+  "/articles/alin-coen-kein-weg-zurueck.html"
+);
+
 const cardListElement = document.getElementById("card-list");
 const reversedArticleList = articleList.reverse();
 
